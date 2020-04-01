@@ -27,6 +27,11 @@
   "bin": {
     "jingo": "./jingo"
   },
+  "scripts": {
+    "test": "node_modules/.bin/mocha test/spec",
+    "start": "./jingo -c config.yaml",
+    "start-dev": "nodemon ./jingo -c config.yaml"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/claudioc/jingo"
@@ -68,11 +73,6 @@
     "mocha": "*",
     "nodemon": "^1.10.2",
     "sinon": "^1.10.3"
-  },
-  "scripts": {
-    "test": "node_modules/.bin/mocha test/spec",
-    "start": "./jingo -c config.yaml",
-    "start-dev": "nodemon ./jingo -c config.yaml"
   },
   "engines": {
     "node": ">=0.8",
